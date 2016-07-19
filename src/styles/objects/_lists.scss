@@ -1,0 +1,18 @@
+/**
+ * LISTS
+ */
+
+%o-list,
+.o-list{
+	list-style:none
+}
+%o-list__inline,
+.o-list__inline{
+	margin:  0;
+	padding: 0;
+	list-style: none;
+
+	> li {
+		display: inline-block;
+	}
+}

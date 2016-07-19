@@ -1,0 +1,10 @@
+/**
+ * BREAKPOINTS
+ */
+
+$breakpoints:(
+	"phablet"           "(min-width: 414px)",
+    "tablet"            "(min-width: 768px)",
+    "desktop"           "(min-width: 1024px)",
+    "large-desktop"     "(min-width: 1200px)"
+);

@@ -1,0 +1,40 @@
+/**
+ * ICONS - ICOMOON
+ */
+
+@font-face {
+    font-family: 'kticonset';
+    src:    url('../assets/fonts/icon/kticonset.eot?ndbx73');
+    src:    url('../assets/fonts/icon/kticonset.eot?ndbx73#iefix') format('embedded-opentype'),
+        url('../assets/fonts/icon/kticonset.ttf?ndbx73') format('truetype'),
+        url('../assets/fonts/icon/kticonset.woff?ndbx73') format('woff'),
+        url('../assets/fonts/icon/kticonset.svg?ndbx73#kticonset') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="kti-"], [class*=" kti-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'kticonset' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.kti-envelop:before {
+    content: "\e900";
+}
+.kti-linkedin:before {
+    content: "\e901";
+}
+.kti-twitter:before {
+    content: "\e902";
+}
+

@@ -1,0 +1,44 @@
+.c-intro-block{
+
+	@include span_columns(12);
+	min-height: 300px;
+
+	.c-intro-block-content--text{
+			@include span_columns(8);
+			@include shift(2);
+			text-align: center;
+			color:$white;
+	}
+	.c-intro-block-content{
+	 		margin-top:15%;
+	}
+	.c-intro-block-content--profile{
+		@include span_columns(2);
+		@include shift(5);
+	}
+	.c-intro-block-content--profile img{
+		width:100%;
+	}
+
+	/* For sizes > tablet */
+	@include mq(tablet){
+		height:100%;
+	 	.c-intro-block-content{
+	 		margin-top:35%;
+	 	}
+		.c-intro-block-content--text{
+			@include span_columns(4);
+			@include shift(4);
+			color:$white;
+		}
+		.c-intro-block-content--profile{
+			@include span_columns(2);
+			@include shift(5);
+		}
+		.c-intro-block-content--profile img{
+			width:100%;
+		}
+	}
+	
+	
+}

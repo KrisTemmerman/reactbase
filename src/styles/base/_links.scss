@@ -1,0 +1,17 @@
+/**
+ * LINKS
+ */
+
+%default-link{
+	color: #dedede;
+	text-decoration:none;
+	text-transform: uppercase;
+	&:hover{
+		text-decoration: none;
+		color:$secondary-color;
+	}
+}
+.o-link{
+	@extend %default-link;
+	
+}

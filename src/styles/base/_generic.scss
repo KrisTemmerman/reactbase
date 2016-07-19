@@ -1,0 +1,32 @@
+/*
+	Generic
+ */
+html{
+	height:100%;
+}
+body{
+	@include box-sizing(border-box);
+	color: $base-text-color;
+	font: ($base-font-size/16) * 1em $base-font-family;
+	line-height: 1.818;
+	height:100%;
+	background:$white;
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body > * {
+	&,
+	&:after,
+	&:before{
+		box-sizing: inherit;
+	}
+}
+.main{
+	height:100%;
+}
+
+span.red{
+	color:red;
+}

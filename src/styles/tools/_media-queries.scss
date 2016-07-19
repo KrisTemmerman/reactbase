@@ -1,0 +1,30 @@
+/**
+ * MEDIA QUERIES
+ */
+
+@mixin mq($mq, $orientation: false) {
+    $breakpoint-found: false;
+
+    @each $breakpoint in $breakpoints {
+
+        $alias:     nth($breakpoint, 1);
+        $condition: nth($breakpoint, 2);
+        $and: "";
+
+        @if $mq == $alias and $condition {
+            $breakpoint-found: true;
+            @if $orientation {
+                $and: ' and ';
+                $condition: $condition + $and + '(orientation: ' + $orientation+ ')';
+            }
+            @media #{$condition} {
+                @content;
+            }
+        }
+
+    }
+
+    @if $breakpoint-found == false {
+        @warn "Breakpoint ‘#{$mq}’ does not exist."
+    }
+}

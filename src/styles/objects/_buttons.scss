@@ -1,0 +1,17 @@
+.o-button{
+	background:none;
+	border:2px solid $white;
+	color: $white;
+	padding-left:rem(12);
+	padding-right:rem(12);
+	font-size:1em;
+	font-weight: 300;
+	outline:none;
+}
+.o-button:hover{
+	color:red;
+	background-color:$white;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 300ms 0ms;
+}

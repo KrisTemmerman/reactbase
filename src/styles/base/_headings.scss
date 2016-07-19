@@ -1,0 +1,38 @@
+/**
+ * HEADINGS
+ */
+body{
+	h2 { font-size: rem(30); }
+    h3 { font-size: rem(21); }
+    h4 { font-size: rem(18); }
+    h5 { font-size: rem(14); }
+    h6 { font-size: rem(12); }
+
+    #{headings(1,6)} {
+        @extend .o-heading;
+    }
+
+    #{headings(3,6)} {
+        font-weight: normal;
+    }
+
+}
+.o-heading{
+	font-family:"Nunito";
+	color:$secondary-color;
+}
+.o-heading__center{
+    text-align:center;
+}
+
+.o-heading-small__center{
+    text-align:center;
+    font-size:rem(15);
+}
+.o-highlight{
+    color:$highlight;
+}
+
+.o-center{
+    text-align:center;
+}

@@ -1,0 +1,11 @@
+.o-wrapper{
+	position:relative;
+	@include clearfix;
+	margin-top:0;
+	margin-left:rem(10);
+	margin-right:rem(10);
+	@include mq(phablet){
+		margin-top:rem(50);
+			@include outer-container(680px);
+	}
+}
